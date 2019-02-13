@@ -14,4 +14,12 @@ public class TestCaesarCipher {
 
         assertEquals("Bmrk", res, "Should return Bmrk");
     }
+
+    @Test void testDecrypt() {
+        String c = "Bmrk";
+
+        String res = CaesarCipher.decrypt(c, 4);
+
+        assertEquals("Xing", res, "Should return Xing");
+    }
 }
