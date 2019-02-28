@@ -21,4 +21,22 @@ public class Analytics {
         String[] allMax = (String[]) arrList.stream().toArray(String[]::new);
         return allMax;
     }
+
+    public static String[] masCorta(String[] arr) {
+        ArrayList arrList = new ArrayList();
+        int maxSize = arr[0].length();
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i].length() < maxSize) {
+                maxSize = arr[i].length();
+            }
+        }
+
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i].length() == maxSize) {
+                arrList.add(arr[i]);
+            }
+        }
+        String[] allMax = (String[]) arrList.stream().toArray(String[]::new);
+        return allMax;
+    }
 }
