@@ -19,6 +19,15 @@ public class TestAnalytics {
     }
 
     @Test
+    public void masLargaAlphabeticalTest() {
+        String[] words = new String[]{"leche", "arroz", "agua"};
+
+        String[] res = Analytics.masLarga(words);
+
+        assertArrayEquals(new String[]{"arroz", "leche"}, res, "Should return: arroz, leche");
+    }
+
+    @Test
     public void masCortaTest() {
         String[] words = new String[]{"casa", "casita", "casototota"};
         String[] words2 = new String[]{"casa", "mia", "cosa", "ala"};

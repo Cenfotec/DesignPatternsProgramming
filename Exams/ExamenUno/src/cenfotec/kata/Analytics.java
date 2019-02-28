@@ -1,6 +1,7 @@
 package cenfotec.kata;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Analytics {
 
@@ -18,6 +19,7 @@ public class Analytics {
                 arrList.add(arr[i]);
             }
         }
+        Collections.sort(arrList);
         String[] allMax = (String[]) arrList.stream().toArray(String[]::new);
         return allMax;
     }
