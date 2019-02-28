@@ -38,4 +38,14 @@ public class TestAnalytics {
         assertArrayEquals(new String[]{"casa"}, res, "Should return: casa");
         assertArrayEquals(new String[]{"mia", "ala"}, res2, "Should return: mia, ala");
     }
+
+    @Test
+    public void masCortaAlphabeticalTest() {
+        String[] words = new String[]{"hola", "bebe", "cero", "alpaca"};
+
+        String[] res = Analytics.masCorta(words);
+
+        assertArrayEquals(new String[]{"bebe", "cero", "hola"}, res, "Should return: bebe, cero, hola");
+    }
+
 }

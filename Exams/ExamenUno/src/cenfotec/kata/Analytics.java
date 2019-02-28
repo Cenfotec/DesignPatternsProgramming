@@ -38,6 +38,7 @@ public class Analytics {
                 arrList.add(arr[i]);
             }
         }
+        Collections.sort(arrList);
         String[] allMax = (String[]) arrList.stream().toArray(String[]::new);
         return allMax;
     }
