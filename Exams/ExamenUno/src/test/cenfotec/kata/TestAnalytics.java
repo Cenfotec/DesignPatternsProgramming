@@ -36,7 +36,7 @@ public class TestAnalytics {
         String[] res2 = Analytics.masCorta(words2);
 
         assertArrayEquals(new String[]{"casa"}, res, "Should return: casa");
-        assertArrayEquals(new String[]{"mia", "ala"}, res2, "Should return: mia, ala");
+        assertArrayEquals(new String[]{"ala", "mia"}, res2, "Should return: mia, ala");
     }
 
     @Test
