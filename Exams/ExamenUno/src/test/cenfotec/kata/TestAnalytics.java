@@ -48,4 +48,13 @@ public class TestAnalytics {
         assertArrayEquals(new String[]{"bebe", "cero", "hola"}, res, "Should return: bebe, cero, hola");
     }
 
+    @Test
+    public void primeraMasLarga() {
+        String[] words = new String[]{"casa", "cosa", "ver"};
+
+        String[] res = Analytics.primeraMasLarga(words);
+
+        assertArrayEquals(new String[]{"casa"}, res, "Should return: casa");
+    }
+
 }

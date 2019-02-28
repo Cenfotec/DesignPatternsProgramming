@@ -42,4 +42,22 @@ public class Analytics {
         String[] allMax = (String[]) arrList.stream().toArray(String[]::new);
         return allMax;
     }
+
+    public static String[] primeraMasLarga(String[] arr) {
+        String[] allNum = new String[1];
+        int maxSize = 0;
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i].length() > maxSize) {
+                maxSize = arr[i].length();
+            }
+        }
+
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i].length() == maxSize) {
+                allNum[0] = arr[i];
+                break;
+            }
+        }
+        return allNum;
+    }
 }
